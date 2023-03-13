@@ -1,0 +1,56 @@
+.contato {
+  background-color: var(--primaria);
+  padding: 1em;
+}
+.contato__titulo {
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-size: 18px;
+  background: var(--degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding: 1em;
+}
+.contato__texto {
+  font-size: 16px;
+  font-weight: 300;
+  background: var(--degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding: 0 1em 1em 1em;
+}
+.contato__email {
+  padding: 1em;
+  border: 1px solid var(--terciaria);
+  border-radius: 24px;
+  width: 90%;
+}
+.contato__email::placeholder {
+  font-family: var(--font-main);
+  color: var(--terciaria);
+  font-weight: 400;
+  background: url("/assets/Vector\ \(1\).svg") no-repeat;
+  background-position: 1em;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contato__email {
+    width: 30%;
+  }
+  .contato__descricao {
+     margin-right: 3em;
+     width: 30%;
+  }
+  .contato__titulo {
+    font-size: 24px;
+  }
+}
